@@ -1,7 +1,7 @@
 import { Collapse } from "react-collapse";
 import { useState } from "react";
 import PersonalInfoInput from "./PersonalInfoInput";
-import WordExperienceInput from "./WordExperienceInput";
+import WorkExperienceInput from "./WorkExperienceInput";
 import JobInforInput from "./JobInforInput";
 import * as React from "react";
 
@@ -11,7 +11,7 @@ export default function CollapseController() {
   const [openCompanyInfo, setOpenCompanyInfo] = useState(false);
 
   return (
-    <section lang="en" className="flex gap-4 flex-col">
+    <section lang="en" className="flex gap-4 flex-col lg:w-1/2">
       <div>
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
@@ -31,7 +31,7 @@ export default function CollapseController() {
           Work Experience
         </button>
         <Collapse isOpened={openWorkExperienceInfo}>
-          <WordExperienceInput />
+          <WorkExperienceInput />
         </Collapse>
       </div>
       <div>

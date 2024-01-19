@@ -29,7 +29,7 @@ const formFields = [
   },
 ];
 
-export default function WordExperienceInput() {
+export default function WorkExperienceInput() {
   return (
     <form className="py-4">
       <NormalInput
